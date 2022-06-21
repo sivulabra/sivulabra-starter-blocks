@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "settings": {
+    "typography": {
+      "fontSizes": []
+    },
+    "blocks": {
+      "core/button": {
+        "border": {
+          "color": false,
+          "radius": false,
+          "style": false,
+          "width": false
+        }
+      }
+    },
+    "layout": {
+      "contentSize": "840px"
+    }
+  }
+}

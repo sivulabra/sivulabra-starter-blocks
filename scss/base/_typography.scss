@@ -1,0 +1,10 @@
+@use '../abstract/colors' as *;
+@use '../abstract/mixins' as *;
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
