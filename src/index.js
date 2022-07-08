@@ -2,7 +2,7 @@ import '../scss/main.scss'
 import Module from './modules/Module'
 
 // Main JavaScript that is provided to Webpack for asset compiling
-const module = new Module()
+const module = new Module();
 
 // Custom events when a product is added to the cart (with jQuery because there is no other way :D)
 (function($) {
