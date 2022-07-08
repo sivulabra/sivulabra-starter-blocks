@@ -17,12 +17,3 @@ function sivulabraResults( $data ) {
 
   return "It works!";
 }
-
-
-// Methods
-function getResponse( $products, $term ) {
-  $data = [];
-  $i = 0;
-
-  return $data;
-}
