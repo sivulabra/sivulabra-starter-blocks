@@ -1,5 +1,9 @@
 # Sivulabra Starter Blocks
-Experimental block theme with Full Site Editing support. Includes WooCommerce support.
+Experimental block theme with Full Site Editing support. Includes WooCommerce support. This theme includes:
+* Full Site Editing support.
+* Reusable classes to create custom Blocks easily and fast.
+* Modern WordPress workflow using [@wordpress/scripts](https://www.npmjs.com/package/@wordpress/scripts).
+* WooCommerce support including custom hooks, overridden styling and product gallery features such as zoom, swipe and lightbox.
 
 ## Installation
 Under construction.
