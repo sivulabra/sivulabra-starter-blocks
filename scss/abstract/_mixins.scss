@@ -1,4 +1,5 @@
 @use './breakpoints' as *;
+@use './spacing' as *;
 
 @mixin xsm {
   @media (min-width: map-get($breakpoints, "xsm")) {
@@ -33,5 +34,13 @@
 @mixin xxl {
   @media (min-width: map-get($breakpoints, "xxl")) {
     @content;
+  }
+}
+
+@mixin block-gap {
+  margin-top: $mobile-block-gap;
+
+  @include xl {
+    margin-top: $block-gap;
   }
 }

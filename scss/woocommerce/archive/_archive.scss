@@ -1,0 +1,43 @@
+@use '../../abstract/colors' as *;
+@use '../../abstract/mixins' as *;
+
+.woocommerce-archive {
+  .products {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+
+    @include sm {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    @include lg {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    @include xl {
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+  }
+
+  .product {
+    position: relative;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    .woocommerce-loop-product__title {
+      color: black;
+      font-size: 16px;
+    }
+
+    .onsale {
+      position: absolute;
+    }
+  }
+}

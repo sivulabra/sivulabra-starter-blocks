@@ -1,0 +1,8 @@
+@use '../abstract/colors' as *;
+
+.site-footer {
+  margin-top: 4rem;
+  padding: 2rem;
+  background-color: map-get($colors, "primary");
+  color: #FFF;
+}

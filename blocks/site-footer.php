@@ -2,5 +2,7 @@
 ?>
 
 <footer class="site-footer">
-  Footer
+  <div class="container">
+    Footer
+  </div>
 </footer>
