@@ -23,6 +23,9 @@ add_action( 'after_setup_theme', 'sivulabraSetup' );
 // Load assets
 require get_template_directory() . '/inc/assets.php';
 
+// Load breadcrumbs
+require get_template_directory() . '/inc/breadcrumbs.php';
+
 // Load blocks
 require get_template_directory() . '/inc/blocks.php';
 require get_template_directory() . '/inc/placeholder-blocks.php';

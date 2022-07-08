@@ -1,5 +1,15 @@
 {
   "version": 2,
+  "customTemplates": [
+    {
+      "name": "archive-product",
+      "title": "Tuotekategoria"
+    },
+    {
+      "name": "single-product",
+      "title": "Tuotesivu"
+    }
+  ],
   "settings": {
     "typography": {
       "fontSizes": []

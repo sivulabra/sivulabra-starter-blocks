@@ -1,5 +1,5 @@
-wp.blocks.registerBlockType( "sivulabra/single-page", {
-  title: "Sivu sisältö",
+wp.blocks.registerBlockType( "sivulabra/product-archive", {
+  title: "Tuotekategoria sisältö",
   supports: {
     align: ["full"],
   },
@@ -9,10 +9,10 @@ wp.blocks.registerBlockType( "sivulabra/single-page", {
       {
         className: "placeholder-block"
       },
-      "Sivu sisältö"
+      "Tuotekategoria sisältö"
     )
   },
   save: function() {
-    return null;
+    return null
   }
 } )
