@@ -1,3 +1,5 @@
+@use './variables' as *;
+
 @mixin column-width($numberColumns: 3) {
 	width: map-get($columns, $numberColumns) - calc(($columns--margin * ($numberColumns - 1)) / $numberColumns);
 }
