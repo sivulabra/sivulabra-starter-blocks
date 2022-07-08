@@ -1,45 +1,14 @@
 <?php
 function getContent() {
+
   if ( is_cart() ) {
-    ?>
-
-    <div class="container">
-      <?php if ( have_posts() ) {
-        while ( have_posts() ) {
-          the_post();
-          the_content();
-        }
-      } ?>
-    </div>
-
-    <?php
+    get_template_part( 'template-parts/cart' );
   } elseif ( is_checkout() ) {
-    ?>
-    
-    <div class="container">
-      <?php if ( have_posts() ) {
-        while ( have_posts() ) {
-          the_post();
-          the_content();
-        }
-      } ?>
-    </div>
-
-    <?php
+    get_template_part( 'template-parts/checkout' );
   } else {
-    ?>
-
-    <div class="container">
-      <?php if ( have_posts() ) {
-        while ( have_posts() ) {
-          the_post();
-          the_content();
-        }
-      } ?>
-    </div>
-
-    <?php
+    get_template_part( 'template-parts/content' );
   }
+  
 }
 ?>
 
