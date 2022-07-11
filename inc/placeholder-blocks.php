@@ -34,6 +34,7 @@ class PlaceholderBlock {
 new PlaceholderBlock( "site-header" );
 new PlaceholderBlock( "site-footer" );
 new PlaceholderBlock( "single-page" );
+new PlaceholderBlock( "front-page" );
 
 // WooCommerce blocks
 if ( class_exists( 'WooCommerce' ) ) {
