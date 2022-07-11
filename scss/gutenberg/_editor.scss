@@ -1,0 +1,12 @@
+@use '../abstract/spacing' as *;
+
+.edit-post-visual-editor__post-title-wrapper {
+  margin-top: $block-gap;
+  margin-bottom: $block-gap;
+}
+
+.is-root-container.block-editor-block-list__layout {
+  & > * + * {
+    margin-top: $block-gap;
+  }
+}
