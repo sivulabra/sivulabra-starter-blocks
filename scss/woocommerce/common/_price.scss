@@ -1,14 +1,13 @@
 @use '../../abstract/colors' as *;
-@use '../../abstract/font-weights' as *;
 
 .woocommerce-Price-amount {
   color: map-get($colors, "primary");
-  font-weight: map-get($font-weights, "bold");
+  font-weight: 700;
 }
 
 del {
   .woocommerce-Price-amount {
     color: black;
-    font-weight: map-get($font-weights, "regular");
+    font-weight: 700;
   }
 }
