@@ -38,5 +38,6 @@ new PlaceholderBlock( "front-page" );
 
 // WooCommerce blocks
 if ( class_exists( 'WooCommerce' ) ) {
-  // Empty
+  new PlaceholderBlock( "cart" );
+  new PlaceholderBlock( "checkout" );
 }

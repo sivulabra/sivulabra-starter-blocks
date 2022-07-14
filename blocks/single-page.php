@@ -1,17 +1,13 @@
-<?php
-function getContent() {
-
-  if ( is_cart() ) {
-    get_template_part( 'template-parts/cart' );
-  } elseif ( is_checkout() ) {
-    get_template_part( 'template-parts/checkout' );
-  } else {
-    get_template_part( 'template-parts/content', get_post_type() );
-  }
-
-}
-?>
-
 <main id="site-main" class="site-main">
-  <?php getContent(); ?>
+  <?php
+  if ( have_posts() ) {
+    while ( have_posts() ) {
+      the_post();
+      ?>
+      <h1><?php the_title(); ?></h1>
+      <?php
+    }
+  }
+  get_template_part( 'template-parts/content', get_post_type() );
+  ?>
 </main>

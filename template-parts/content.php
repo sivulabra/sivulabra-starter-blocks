@@ -1,5 +1,5 @@
 <div class="container">
-  content-page
+  content
   <?php
   the_content();
   ?>
