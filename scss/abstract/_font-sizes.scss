@@ -1,0 +1,52 @@
+@use './breakpoints' as *;
+
+// Headings
+$h1-font-sizes: (
+  null:                           32px,
+  map-get($breakpoints, "xl"):    40px
+);
+$h2-font-sizes: (
+  null:                           24px,
+  map-get($breakpoints, "xl"):    30px
+);
+$h3-font-sizes: (
+  null:                           21px,
+  map-get($breakpoints, "xl"):    24px
+);
+$h4-font-sizes: (
+  null:                           18px,
+  map-get($breakpoints, "xl"):    20px
+);
+$h5-font-sizes: (
+  null:                           14px,
+  map-get($breakpoints, "xl"):    16px
+);
+$h6-font-sizes: (
+  null:                           12px,
+  map-get($breakpoints, "xl"):    14px
+);
+
+// Paragraph
+$p-font-sizes: (
+  null:                           16px
+);
+
+// Components
+$banner-font-sizes: (
+  null:                           38px,
+  map-get($breakpoints, "xl"):    52px
+);
+
+// Mixin for determining the right font size
+@mixin font-size($fs-map) {
+  @each $fs-breakpoint, $fs-font-size in $fs-map {
+    @if $fs-breakpoint == null {
+      font-size: $fs-font-size;
+    }
+    @else {
+      @media screen and (min-width: $fs-breakpoint) {
+        font-size: $fs-font-size;
+      }
+    }
+  }
+}
