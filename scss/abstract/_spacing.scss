@@ -1,2 +1,22 @@
-$block-gap: 6rem;
-$mobile-block-gap: 3rem;
+@use './breakpoints' as *;
+
+// Headings
+$block-gaps: (
+  null:                           5rem,
+  map-get($breakpoints, "lg"):    8rem,
+  map-get($breakpoints, "xl"):    10rem
+);
+
+// Mixin for determining the right line height
+@mixin block-gap($bg-map) {
+  @each $bg-breakpoint, $bg-block-gap in $bg-map {
+    @if $bg-breakpoint == null {
+      margin-top: $bg-block-gap;
+    }
+    @else {
+      @media (min-width: $bg-breakpoint) {
+        margin-top: $bg-block-gap;
+      }
+    }
+  }
+}

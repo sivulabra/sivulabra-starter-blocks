@@ -1,0 +1,46 @@
+@use './breakpoints' as *;
+
+// Headings
+$h1-line-heights: (
+  null:                           44px,
+  map-get($breakpoints, "xl"):    50px
+);
+$h2-line-heights: (
+  null:                           24px,
+  map-get($breakpoints, "xl"):    30px
+);
+$h3-line-heights: (
+  null:                           21px,
+  map-get($breakpoints, "xl"):    24px
+);
+$h4-line-heights: (
+  null:                           18px,
+  map-get($breakpoints, "xl"):    20px
+);
+$h5-line-heights: (
+  null:                           14px,
+  map-get($breakpoints, "xl"):    16px
+);
+$h6-line-heights: (
+  null:                           12px,
+  map-get($breakpoints, "xl"):    14px
+);
+
+// Paragraph
+$p-line-heights: (
+  null:                           30px
+);
+
+// Mixin for determining the right line height
+@mixin line-height($lh-map) {
+  @each $lh-breakpoint, $lh-line-height in $lh-map {
+    @if $lh-breakpoint == null {
+      line-height: $lh-line-height;
+    }
+    @else {
+      @media (min-width: $lh-breakpoint) {
+        line-height: $lh-line-height;
+      }
+    }
+  }
+}

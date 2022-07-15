@@ -2,8 +2,8 @@
 
 // Headings
 $h1-font-sizes: (
-  null:                           32px,
-  map-get($breakpoints, "xl"):    40px
+  null:                           30px,
+  map-get($breakpoints, "xl"):    36px
 );
 $h2-font-sizes: (
   null:                           24px,
@@ -37,14 +37,14 @@ $banner-font-sizes: (
   map-get($breakpoints, "xl"):    52px
 );
 
-// Mixin for determining the right font size
+// Mixin for determining the right line height
 @mixin font-size($fs-map) {
   @each $fs-breakpoint, $fs-font-size in $fs-map {
     @if $fs-breakpoint == null {
       font-size: $fs-font-size;
     }
     @else {
-      @media screen and (min-width: $fs-breakpoint) {
+      @media (min-width: $fs-breakpoint) {
         font-size: $fs-font-size;
       }
     }
