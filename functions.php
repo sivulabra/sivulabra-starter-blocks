@@ -20,6 +20,9 @@ function sivulabraSetup() {
 }
 add_action( 'after_setup_theme', 'sivulabraSetup' );
 
+// Load admin customization
+require get_template_directory() . '/inc/admin.php';
+
 // Load assets
 require get_template_directory() . '/inc/assets.php';
 
