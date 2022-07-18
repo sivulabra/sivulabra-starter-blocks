@@ -65,5 +65,6 @@ class JSXBlock {
 
 // JSXBlock instances
 new JSXBlock( 'block', true );
+new JSXBlock( 'button', true );
 new JSXBlock( 'boxes', true );
 new JSXBlock( 'box', true );
