@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "wp-scripts start src/index.js blocks/block.js",
-    "build": "wp-scripts build src/index.js blocks/block.js"
+    "start": "wp-scripts start src/index.js blocks/block.js blocks/boxes.js blocks/box.js",
+    "build": "wp-scripts build src/index.js blocks/block.js blocks/boxes.js blocks/box.js"
   },
   "keywords": [],
   "author": "",

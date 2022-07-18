@@ -1,5 +1,6 @@
 wp.blocks.registerBlockType( "sivulabra/front-page", {
   title: "Etusivun sisältö",
+  category: 'sivulabra',
   supports: {
     align: ["full"],
   },

@@ -1,5 +1,6 @@
 wp.blocks.registerBlockType( "sivulabra/checkout", {
   title: "Kassan sisältö",
+  category: 'sivulabra',
   supports: {
     align: ["full"],
   },

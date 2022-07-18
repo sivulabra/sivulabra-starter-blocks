@@ -1,5 +1,6 @@
 wp.blocks.registerBlockType( "sivulabra/cart", {
   title: "Ostoskorin sisältö",
+  category: 'sivulabra',
   supports: {
     align: ["full"],
   },

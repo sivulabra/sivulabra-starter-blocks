@@ -1,5 +1,6 @@
 wp.blocks.registerBlockType( "sivulabra/single-page", {
   title: "Sivun sisältö",
+  category: 'sivulabra',
   supports: {
     align: ["full"],
   },
